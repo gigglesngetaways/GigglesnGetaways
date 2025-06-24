@@ -1,78 +1,79 @@
-
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giggles & Getaways</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giggles & Getaways</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="site-header">
-        <img src="logo.jpeg" alt="Giggles & Getaways Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#booking">Book a Nanny</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <img src="logo.jpeg" alt="Giggles & Getaways Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#booking">Book a Nanny</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <h1>Nanny Care Wherever You Go</h1>
-        <p>We’re a professional team of travel-savvy, kid loving nannies here to support families during vacations, theme park trips, conferences, and work travel.</p>
-        <p>All of our nannies are background checked, CPR certified, and hand picked for their caring hearts and travel ready energy. We care for your littles like they’re our own with fun, structure, and lots of love!</p>
-        <a href="#booking" class="btn">Book a Nanny</a>
-    </section>
+  <section class="hero">
+    <h1>Nanny Care Wherever You Go</h1>
+    <p>We’re a professional team of travel-savvy, kid loving nannies here to support families during vacations, theme park trips, conferences, and work travel.</p>
+    <p>All of our nannies are background checked, CPR certified, and hand picked for their caring hearts and travel ready energy. We care for your littles like they’re our own with fun, structure, and lots of love!</p>
+    <a href="#booking" class="btn">Book a Nanny</a>
+  </section>
 
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service">
-                <h3>Theme Park Nannying</h3>
-                <p>Help at Disney and other theme parks for stress-free fun.</p>
-            </div>
-            <div class="service">
-                <h3>Travel Nannying</h3>
-                <p>Multi-day travel support for vacations and adventures.</p>
-            </div>
-            <div class="service">
-                <h3>Plane Assistance</h3>
-                <p>In-flight and airport help to make travel smooth and safe.</p>
-            </div>
-            <div class="service">
-                <h3>Hotel or At-Home Babysitting</h3>
-                <p>Flexible babysitting options where you're staying.</p>
-            </div>
-        </div>
-    </section>
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service">
+        <h3>Theme Park Nannying</h3>
+        <p>Help at Disney and other theme parks for stress-free fun.</p>
+      </div>
+      <div class="service">
+        <h3>Travel Nannying</h3>
+        <p>Multi-day travel support for vacations and adventures.</p>
+      </div>
+      <div class="service">
+        <h3>Plane Assistance</h3>
+        <p>In-flight and airport help to make travel smooth and safe.</p>
+      </div>
+      <div class="service">
+        <h3>Hotel or At-Home Babysitting</h3>
+        <p>Flexible babysitting options where you're staying.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="booking" class="booking">
-        <h2>Book a Nanny</h2>
-        <form>
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="service">Service Needed</label>
-            <select id="service" name="service" required>
-                <option value="theme_park">Theme Park Nannying</option>
-                <option value="travel">Travel Nannying</option>
-                <option value="plane">Plane Assistance</option>
-                <option value="hotel">Hotel or At-Home Babysitting</option>
-            </select>
-            
-            <label for="date">Date of Service</label>
-            <input type="date" id="date" name="date" required>
-            
-            <button type="submit">Submit Booking</button>
-        </form>
-    </section>
+  <section id="booking" class="booking">
+    <h2>Book a Nanny</h2>
+    <form action="https://formspree.io/f/manjlnqd" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
 
-    <footer>
-        <p>&copy; 2025 Giggles & Getaways. All rights reserved.</p>
-    </footer>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="service">Service Needed</label>
+      <select id="service" name="service" required>
+        <option value="theme_park">Theme Park Nannying</option>
+        <option value="travel">Travel Nannying</option>
+        <option value="plane">Plane Assistance</option>
+        <option value="hotel">Hotel or At-Home Babysitting</option>
+      </select>
+
+      <label for="date">Date of Service</label>
+      <input type="date" id="date" name="date" required />
+
+      <input type="hidden" name="_redirect" value="thank-you.html" />
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Giggles & Getaways. All rights reserved.</p>
+  </footer>
 </body>
 </html>
