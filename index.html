@@ -92,5 +92,18 @@
     
     <p>&copy; 2025 Giggles & Getaways. All rights reserved.</p>
   </footer>
+  
+  <script>
+  const form = document.getElementById('booking-form');
+  const button = document.getElementById('submit-btn');
+  const message = document.getElementById('form-message');
+
+  form.addEventListener('submit', function () {
+    button.disabled = true;
+    button.style.opacity = '0.5';
+    message.style.display = 'block';
+  });
+</script>
+  
 </body>
 </html>
