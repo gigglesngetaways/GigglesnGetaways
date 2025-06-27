@@ -77,9 +77,12 @@
       <input type="date" id="date" name="date" required />
       <small>Only needed for multi-day travel services</small>
 
-      <input type="hidden" name="_redirect" value="thank-you.html" />
-      <button type="submit">Submit Booking</button>
-    </form>
+      <form id="booking-form" action="https://formspree.io/f/manjlnqd" method="POST">
+
+      <button type="submit" id="submit-btn">Submit Booking</button>
+      <p id="form-message" style="display: none; color: #d14c78; margin-top: 10px;">Gathering all the toys...</p>
+      </form>
+      
   </section>
 
   <footer>
